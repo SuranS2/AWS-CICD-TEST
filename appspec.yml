@@ -2,26 +2,26 @@ version: 0.0
 os: linux
 files:
   - source: .
-    destination: /home/ununtu/build
+    destination: /home/ubuntu/build
     overwrite: yes
 
 permissions:
   - object: /
     pattern : "**"
     mode : 755
-    owner : ununtu
-    group : ununtu
+    owner : ubuntu
+    group : ubuntu
 
 hooks:
   ApplicationStart:
     - location: start.sh
       timeout: 300
-      runas: ununtu
+      runas: ubuntu
 
   ApplicationStop:
     - location: stop.sh
       timeout: 300
-      runas: ununtu
+      runas: ubuntu
 
 
 
