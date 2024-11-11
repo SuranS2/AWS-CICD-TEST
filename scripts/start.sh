@@ -6,4 +6,5 @@ if [ -n "$PID" ]; then
 fi
 
 # 새 애플리케이션 시작
-nohup java -jar /home/ubuntu/build/elice-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
+#nohup java -jar /home/ubuntu/build/elice-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
+nohup java -jar /home/ubuntu/build/elice-0.0.1-SNAPSHOT.jar 1> /home/ubuntu/standard.log 2>&1 &
